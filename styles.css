@@ -1,0 +1,253 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  box-sizing: border-box;
+}
+
+a, span, p {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 0;
+  line-height: 1.75em;
+}
+
+h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+  color: #29377e;
+  transition: 0.4s all ease-in-out;
+}
+
+a:hover {
+  color: navy;
+}
+
+.light {
+  color: #e3e3e3;
+}
+
+.container {
+  max-width: 1020px;
+  margin: auto;
+}
+
+span.btn {
+  background-color: #3a3a3a;
+  padding: 0.75em 1em;
+  transition: 0.4s all ease-in-out;
+}
+
+span.btn:hover {
+  background-color: #29377e;
+}
+
+span.btn a {
+  color: #dedede;
+  text-transform: uppercase;
+}
+
+/* Topbar Menu */
+
+nav {
+  width: 100%;
+  position: absolute;
+  top: 1em;
+}
+
+.topbar-menu {
+  display: inline-block;
+  float: right;
+}
+.topbar-menu ul {
+    list-style: none;
+}
+
+.topbar-menu ul li {
+  display: inline-block;
+}
+
+.topbar-menu ul li a {
+  text-transform: uppercase;
+  margin-left: 1em;
+}
+
+
+/* End of Topobar Menu */
+
+/* Hero Banner Section */
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.hero-img .container {
+  text-align: center;
+  margin: 11em auto 9em;
+}
+
+.hero-img .container .hero-text {
+  margin-bottom: 2em;
+  margin-top: 3em;
+  clear: both;
+  color: #ffffff;
+}
+
+/* End of Hero Banner Section */
+
+/* About Section */
+
+.about-cta-container {
+  display: table;
+}
+
+section.section-about {
+  width: calc(100% - 320px);
+  display: table-cell;
+  padding-right: 2em;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+/* End of About Section */
+
+/* Call to Action Section */
+
+section.section-cta {
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 1em;
+  width: 250px;
+  margin: -40px 0 -60px;
+  -webkit-box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.85);
+  -moz-box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.85);
+  box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.85);
+}
+
+section.section-cta h3 {
+  margin-top: 0;
+}
+
+form.cta-form input,
+form.cta-form select,
+form.cta-form textarea {
+  width: 100%;
+  border: 1px solid #dedede;
+  margin-bottom: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+form.cta-form button {
+  width: 100%;
+  padding: 10px;
+}
+
+/* End of Call to Action Section */
+
+/* Gallery Section */
+
+section.section-gallery {
+  background-color: #29377e;
+  padding: 4em;
+}
+
+section.section-gallery h2 {
+  text-align: center;
+}
+
+section.section-gallery .image-thumb {
+  max-width: calc(100% / 4 - 11px);
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+section.section-gallery .image-thumb:nth-of-type(4n) {
+  margin-right: 0;
+}
+
+
+section.section-gallery .image-thumb img {
+  width: 100%;
+  height: auto;
+}
+
+/* End of Gallery Section */
+
+/* Contact Section */
+
+section.section-contact {
+  padding: 4em 0;
+}
+
+section.section-contact h2 {
+  text-align: center;
+}
+
+.row-md-2 {
+  display: flex;
+  column-count: 2;
+}
+
+section.section-contact .col-md-2 {
+  display: inline-flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0 1em;
+}
+
+section.section-contact .business-info span {
+  margin-bottom: 1em;
+}
+
+span.contact-phone::before,
+span.contact-mobile::before,
+span.contact-email::before {
+  font-family: 'FontAwesome';
+  margin-right: 10px;
+}
+
+span.contact-phone::before {
+  content: "\f095";
+}
+
+span.contact-mobile::before {
+  content: "\f10b";
+  font-size: 22px;
+}
+
+span.contact-email::before {
+  content: "\f003";
+}
+
+svg:not(:root) {
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+}
+
+/* End of Contact Section */
+
+/* Footer Section */
+
+footer {
+  background-color: #3a3a3a;
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+footer span {
+  color: #dedede;
+}
