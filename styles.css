@@ -106,13 +106,9 @@ nav {
   background-size: cover;
 }
 
-.homepage .hero-img .container {
-  margin: 13em auto 9em;
-}
-
 .hero-img .container {
   text-align: center;
-  margin: 11em auto 9em;
+  margin: 13em auto 9em;
 }
 
 .hero-img .container .hero-text {
@@ -390,6 +386,16 @@ footer span {
 }
 
 /* End of Footer Section */
+
+/* Start of Services Section */
+
+.service-container {
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+
+/* End of Services Section */
 
 /* Responsive Elements */
 
