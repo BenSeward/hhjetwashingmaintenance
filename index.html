@@ -11,15 +11,16 @@
 
     <title>Swindon Jet Washing & Maintenance Services, HH Jet Washing and Maintenance.</title>
   </head>
-  <body>
+  <body class="homepage">
     <nav>
       <div class="container">
         <div class="topbar-menu">
+          <img src="img/logo.png" alt="HH Jet Washh & Maintenance Logo">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="index.html#contact">Contact</a>
           </ul>
         </div>
       </div>
@@ -31,8 +32,8 @@
             <h1>Commercial Jet Washing Swindon</h1>
             <h3>HH Jet Washing & maintenance is the best choice for  all of your commercial jet washing & maintenance needs in Swindon.</h3>
           </div>
-          <span class="btn"><a href="#">Our Services</a></span>
-          <span class="btn"><a href="#">Contact Us</a></span>
+          <span class="btn"><a href="services.html">Our Services</a></span>
+          <span class="btn"><a href="#contact">Contact Us</a></span>
         </div>
       </div>
     </section>
@@ -40,7 +41,7 @@
     <div class="about-cta-container container">
       <section class="section-about">
         <h2>About Us</h2>
-        <p>Lorem ipsum sit dolor amet consigultaor. Lorem ipsum sit dolor amet consigultaor. Lorem ipsum sit dolor amet consigultaor. Lorem ipsum sit dolor amet consigultaor. Lorem ipsum sit dolor amet consigultaor. Lorem ipsum sit dolor amet consigultaor. Lorem ipsum sit dolor amet consigultaor. Lorem ipsum sit dolor amet consigultaor. Lorem ipsum sit dolor amet consigultaor. </p>
+        <p>HH jet washing and maintenance are a Wiltshire based company covering the south of England. We specialise in all surface cleaning and outdoor maintenance for commercial or domestic properties. We use top of the range machinery and products to ensure our clients are never left disappointed. We strive to maintain high levels of quality and professionalism which keeps our company a step ahead of the rest. We have a very flexible approach with our commercial clients and are willing to work awkward hours to ensure our clients don't have to shut or potentially lose business. We pride ourselves on our exceptional reputation we have built over the years and ensure every job is completed to the highest standards.</p>
       </section>
 
       <section class="section-cta">
@@ -60,36 +61,137 @@
     </div>
 
     <section class="section-gallery">
-      <h2 class="light">Gallery</h2>
+      <h2 id="gallery" class="light">Gallery</h2>
       <div class="gallery-container container">
-        <div class="image-thumb">
-          <img src="img/gallery-1.jpg" alt="">
+        <div class="row">
+         <div class="column">
+           <img src="img/jet-washing-13.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+         </div>
+         <div class="column">
+           <img src="img/jet-washing-2.jpeg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+         </div>
+         <div class="column">
+           <img src="img/jet-washing-3.jpeg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+         </div>
+         <div class="column">
+           <img src="img/jet-washing-4.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+         </div>
         </div>
-        <div class="image-thumb">
-          <img src="img/gallery-1.jpg" alt="">
+
+        <div class="row">
+         <div class="column">
+           <img src="img/jet-washing-5.jpeg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+         </div>
+         <div class="column">
+           <img src="img/jet-washing-6.jpeg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+         </div>
+         <div class="column">
+           <img src="img/jet-washing-7.jpeg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+         </div>
+         <div class="column">
+           <img src="img/jet-washing-14.jpeg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+         </div>
         </div>
-        <div class="image-thumb">
-          <img src="img/gallery-1.jpg" alt="">
+
+        <div class="row">
+         <div class="column">
+           <img src="img/jet-washing-9.jpeg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+         </div>
+         <div class="column">
+           <img src="img/jet-washing-10.jpeg" onclick="openModal();currentSlide(10)" class="hover-shadow">
+         </div>
+         <div class="column">
+           <img src="img/jet-washing-11.jpeg" onclick="openModal();currentSlide(11)" class="hover-shadow">
+         </div>
+         <div class="column">
+           <img src="img/jet-washing-12.jpeg" onclick="openModal();currentSlide(12)" class="hover-shadow">
+         </div>
         </div>
-        <div class="image-thumb">
-          <img src="img/gallery-1.jpg" alt="">
-        </div>
-        <div class="image-thumb">
-          <img src="img/gallery-1.jpg" alt="">
-        </div>
-        <div class="image-thumb">
-          <img src="img/gallery-1.jpg" alt="">
-        </div>
-        <div class="image-thumb">
-          <img src="img/gallery-1.jpg" alt="">
-        </div>
-        <div class="image-thumb">
-          <img src="img/gallery-1.jpg" alt="">
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+         <span class="close cursor" onclick="closeModal()">&times;</span>
+         <div class="modal-content">
+
+           <div class="mySlides">
+             <div class="numbertext">1 / 12</div>
+             <img src="img/jet-washing-13.jpeg" style="width:100%">
+           </div>
+
+           <div class="mySlides">
+             <div class="numbertext">2 / 12</div>
+             <img src="img/jet-washing-2.jpeg" style="width:100%">
+           </div>
+
+           <div class="mySlides">
+             <div class="numbertext">3 / 12</div>
+             <img src="img/jet-washing-3.jpeg" style="width:100%">
+           </div>
+
+           <div class="mySlides">
+             <div class="numbertext">4 / 12</div>
+             <img src="img/jet-washing-4.jpeg" style="width:100%">
+           </div>
+
+           <div class="mySlides">
+             <div class="numbertext">5 / 12</div>
+             <img src="img/jet-washing-5.jpeg" style="width:100%">
+           </div>
+
+           <div class="mySlides">
+             <div class="numbertext">6 / 12</div>
+             <img src="img/jet-washing-6.jpeg" style="width:100%">
+           </div>
+
+           <div class="mySlides">
+             <div class="numbertext">7 / 12</div>
+             <img src="img/jet-washing-7.jpeg" style="width:100%">
+           </div>
+
+           <div class="mySlides">
+             <div class="numbertext">8 / 12</div>
+             <img src="img/jet-washing-14.jpeg" style="width:100%">
+           </div>
+
+           <div class="mySlides">
+             <div class="numbertext">9 / 12</div>
+             <img src="img/jet-washing-9.jpeg" style="width:100%">
+           </div>
+
+           <div class="mySlides">
+             <div class="numbertext">10 / 12</div>
+             <img src="img/jet-washing-10.jpeg" style="width:100%">
+           </div>
+
+           <div class="mySlides">
+             <div class="numbertext">11 / 12</div>
+             <img src="img/jet-washing-11.jpeg" style="width:100%">
+           </div>
+
+           <div class="mySlides">
+             <div class="numbertext">12 / 12</div>
+             <img src="img/jet-washing-12.jpeg" style="width:100%">
+           </div>
+
+           <!-- Next/previous controls -->
+           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+           <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+           <!-- Caption text -->
+           <div class="caption-container">
+             <p id="caption"></p>
+           </div>
+
+
+         </div>
         </div>
       </div>
+
+      <!-- Images used to open the lightbox -->
+
     </section>
 
-    <section class="section-contact container">
+    <section id="contact" class="section-contact container">
       <h2>Contact Us</h2>
       <div class="row-md-2">
         <div class="col-md-2">
