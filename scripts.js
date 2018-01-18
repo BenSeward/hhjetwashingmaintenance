@@ -1,9 +1,19 @@
 $(document).ready(function(){
   console.log("hello world");
 
-  var testimonialCount = $('.testimonial-item').length;
+  var $hints = $('.testimonial-item');
+  var i = 0;
 
-  $('.testimonial-inner').width(1020*testimonialCount);
+  $('.next-testimonial').on('click', function(){
+      i = (i + 1) % $hints.length;
+      $hints.hide().eq(i).show();
+  });
+
+  $('.prev-testimonial').on('click', function(){
+      i = (i - 1) % $hints.length;
+      $hints.hide().eq(i).show();
+  });
+
 
 });
 

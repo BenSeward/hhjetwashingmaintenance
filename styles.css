@@ -401,6 +401,7 @@ footer span {
   background-color: #29377e;
   padding: 4em 0;
   color: #ffffff;
+  position: relative;
 }
 
 .testimonial-container h2 {
@@ -408,25 +409,33 @@ footer span {
   text-align: center;
 }
 
-.testimonial-container .container {
-  overflow-x: scroll;
-}
-
-.testimonial-inner {
-  width: 3000px;
-}
-
 .testimonial-item {
   text-align: center;
   max-width: 1020px;
-  display: inline-block;
-  float: left;
-  position: relative;
+}
+
+.testimonial-item.hidden {
+  display: none;
 }
 
 .prev-testimonial,
 .next-testimonial {
   color: #ffffff;
+}
+
+.testimonial-container .fa {
+    font-size: 110px !important;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.testimonial-container .prev-testimonial {
+  left: 20px;
+}
+
+.testimonial-container .next-testimonial {
+  right: 20px;
 }
 
 .testimonial-item span {
