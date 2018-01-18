@@ -1,5 +1,10 @@
 $(document).ready(function(){
   console.log("hello world");
+
+  var testimonialCount = $('.testimonial-item').length;
+
+  $('.testimonial-inner').width(1020*testimonialCount);
+
 });
 
 // Open the Modal
